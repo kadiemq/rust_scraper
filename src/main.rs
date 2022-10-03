@@ -81,6 +81,6 @@ fn main() {
         let serialized_property = serde_json::to_string(&property).unwrap();
 
         println!("{}", serialized_property);
-        property.save_to_json().unwrap();
+        property.save_to_json();
     }
 }
